@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/xyz"
+    tools:context="jeet.com.inshorts.Activities.NewsFilter">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <include
+        android:id="@+id/toolbar_filter"
+        layout="@layout/toolbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:id="@+id/header_filter"
+        android:background="#cfd8dc"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Apply"
+            android:background="@drawable/scheme_selector"
+            android:textStyle="bold"
+            android:textColor="#444444"
+            android:id="@+id/apply_filter"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Clear"
+            android:id="@+id/clear_filter"
+            android:background="@drawable/scheme_selector"
+            android:textStyle="bold"
+            android:textColor="#444444"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:background="@color/perfect_white"
+        android:layout_height="wrap_content">
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:fillViewport="true"
+            android:layout_height="fill_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_normal"
+                    android:textSize="@dimen/text_size"
+                    android:text="Category"/>
+
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LV1">
+                </ListView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_normal"
+                    android:textSize="@dimen/text_size"
+                    android:text="Publisher"/>
+
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/LV2">
+
+                </ListView>
+            </LinearLayout>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+    </LinearLayout>

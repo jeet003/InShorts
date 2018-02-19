@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<color name="colorPrimary">#3F51B5</color>
+<color name="colorPrimaryDark">#1E4668</color>
+<color name="colorAccent">#1193d4</color>
+<color name="launcher_background_color">#2d4159</color>
+<color name="launcher_transparent_color">#8e607d8b</color>
+<color name="launcher_terms">#00af8b</color>
+<color name="start_color">#204b82</color>
+<color name="end_color">#296b9d</color>
+<color name="editText_color">#ebebeb</color>
+<color name="editText_color_home_screen">#9b031e3f</color>
+<color name="editText_selection_color">#9b1193d4</color>
+<color name="button_color">#07b082</color>
+<color name="chooseLanguage_color">#9e9e9e</color>
+<color name="option_color">#bdbdbd</color>
+<color name="user_pic_color">#999999</color>
+<color name="gray_bg_color">#E0E0E0</color>
+<color name="green">#00e500</color>
+<color name="invest_amount">#a9bed4</color>
+<color name="where_would_you_like">#f3f3f3</color>
+<color name="sort_term_text_color">#020000</color>
+<color name="sort_term_background_color">#d9d9d9</color>
+<color name="scheme_bg_color">#ee2b5f91</color>
+<color name="recommended_for_you_bg">#afe67d</color>
+<color name="rating_star">#f3b305</color>
+<color name="year_return_text_color">#4a4a4a</color>
+<color name="suitable_for_year">#777777</color>
+<color name="white">#dcffffff</color>
+<color name="perfect_white">#ffffff</color>
+<color name="black">#000000</color>
+<color name="transparent_dark_gray_bg_color">#95000000</color>
+</resources>

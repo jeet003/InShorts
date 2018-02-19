@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/xyz"
+    tools:context="jeet.com.inshorts.Activities.NewsDisplay">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="100">
+        <include
+            android:id="@+id/toolbar_news"
+            layout="@layout/toolbar"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="8"
+            android:padding="5dp"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_size"
+                android:id="@+id/reset_button"
+                android:textStyle="bold"
+                android:onClick="onResetClick"
+                android:visibility="invisible"
+                android:gravity="center"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/perfect_white"
+                android:text="Reset"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_size"
+                android:id="@+id/offline"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:visibility="invisible"
+                android:textColor="@color/perfect_white"
+                android:text="Offline Mode"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:id="@+id/filter_button"
+                android:textStyle="bold"
+                android:layout_marginRight="15dp"
+                android:onClick="onFilterClick"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/perfect_white"
+                android:text="Filter"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@drawable/xyz"
+            android:layout_weight="82"
+            android:orientation="vertical">
+            <android.support.v4.widget.SwipeRefreshLayout
+
+                android:id="@+id/swipeRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical"
+                    android:id="@+id/transaction_recycler_view"
+                    >
+                </android.support.v7.widget.RecyclerView>
+            </android.support.v4.widget.SwipeRefreshLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/empty_view"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="@dimen/text_size"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:visibility="gone"
+                android:text="No data found with the current parameters"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:text="Loading..."
+            android:id="@+id/Loading"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:background="@color/perfect_white"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_weight="10"
+            android:padding="5dp"
+            android:layout_height="0dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="@dimen/text_size"
+                android:id="@+id/sort_ascending"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:onClick="onAscendClick"
+                android:layout_marginLeft="15dp"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/perfect_white"
+                android:text="Sort Ascending"
+
+
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:textSize="@dimen/text_size"
+                android:id="@+id/sort_descending"
+                android:textStyle="bold"
+                android:layout_marginRight="15dp"
+                android:gravity="center"
+                android:onClick="onDescendClick"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/perfect_white"
+                android:text="Sort descending"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

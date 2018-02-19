@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">InShorts</string>
+    <string name="progress">Please Wait while we load your news feed</string>
+    <string name="filter">Filter</string>
+    <string name="news">News</string>
+    <string name="news_filter">News Filter</string>
+    <string name="detailed_news">Detailed News</string>
+</resources>
